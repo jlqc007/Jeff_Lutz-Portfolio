@@ -31,22 +31,22 @@
     </a>
     <ul>
       <li>
-        <a class="btn-floating red" href="/Users/user/Desktop/Portfolio/Resume/Jeff_Lutz-2017.docx" download="">
+        <a class="btn-floating red tooltipped" data-position="left" data-tooltip="Download Resume" href="/Users/user/Desktop/Portfolio/Resume/Jeff_Lutz-2019.docx" download="">
           <i class="fas fa-file"></i>
         </a>
       </li>
       <li>
-        <a class="btn-floating yellow darken-1" href="https://github.com/jlqc007">
+        <a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-tooltip="Github" href="https://github.com/jlqc007">
           <i class="fab fa-github"></i>
         </a>
       </li>
       <li>
-        <a class="btn-floating green" href="https://www.linkedin.com/in/jeff-lutz/">
+        <a class="btn-floating green tooltipped" data-position="left" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/jeff-lutz/">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
       <li>
-          <a class="btn-floating #01579b light-blue darken-4 btn modal-trigger" href="#modal1">
+          <a class="btn-floating #01579b light-blue darken-4 btn modal-trigger tooltipped" data-position="left" data-tooltip="About" href="#modal1">
               <i class="fas fa-user-circle"></i>
           </a>
         </li>
@@ -285,7 +285,15 @@
     $(document).ready(function(){
       $('.modal').modal();
     });
-</script>
+  </script>
+
+  <!--Tooltip-->
+  <script>
+    $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+  </script>
+
 </body>
 
 
